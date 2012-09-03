@@ -1,0 +1,68 @@
+/* no whitespace near the borders */
+* {
+padding: 0;
+margin: 0;
+}
+
+html, body {
+	/*height: 100%;*/
+}
+
+body {
+    /*font: 100.01% "Trebuchet MS", Trebuchet, Tahoma, Verdana, Arial, sans-serif;
+    color: #333;
+    padding: 0;*/
+}
+
+body * {
+    /*line-height:1.22em;*/
+	margin: 0;
+	padding: 0;
+	/*height: 100%;*/
+}
+
+#content {
+	width: 100%;
+	/*height: 100%;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color:#4088b8;
+    clear: both;
+}
+
+h1 {
+}
+
+h2 {
+    color: #c8c8c8;
+		margin-top: -25px;
+}
+
+h3 {
+}
+
+h4 {
+    color: #333;
+    margin-bottom: -10px;
+}
+
+p {
+    margin: 10px 0;
+    clear: both;
+}
+
+ul, ol {
+    margin-left 0;
+}
+
+ul ul {
+    margin-bottom: 20px;
+}
+
+#wrap {
+    /*color: #404040*/
+    /*margin: 0 12%;*/
+    /*margin: 20px 40px;*/
+}

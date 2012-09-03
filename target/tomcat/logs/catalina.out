@@ -1,0 +1,276 @@
+2-jul-2012 11:55:16 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.6.0_24\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Haskell\bin;C:\Program Files (x86)\Haskell Platform\2010.2.0.0\lib\extralibs\bin;C:\Program Files (x86)\Haskell Platform\2010.2.0.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Belgium Identity Card;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\TortoiseSVN\bin;C:\wamp\bin\php\php5.3.4\;C:\wamp\www\fomsitenew\cake\console\;C:\Program Files\MATLAB\R2010a\runtime\win64;C:\Program Files\MATLAB\R2010a\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;c:\mingw;C:\Program Files\Java\jdk1.6.0_24\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Users\Jeroen\AppData\Roaming\cabal\bin;"C:\Program Files (x86)\Java\jre6\bin";C:\Program Files (x86)\scala\bin;C:\MinGW\bin;"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin";C:\Users\Jeroen\Documents\KULeuven\VeiligeSoftware\CBMC;%VS10%\Common7\IDE;C:\Program Files\Apache Software Foundation\apache-maven-3.0.4\bin;C:\Program Files\Java\jdk1.6.0_24\bin;
+2-jul-2012 11:55:20 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+2-jul-2012 11:55:20 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 7879 ms
+2-jul-2012 11:55:21 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+2-jul-2012 11:55:21 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.22
+2-jul-2012 11:55:21 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+2-jul-2012 11:55:21 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+2-jul-2012 11:55:21 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory researchPad
+2-jul-2012 11:55:34 org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [be.kuleuven.researchpad.config.WebAppInitializer@ae4c118]
+2-jul-2012 11:55:35 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+2-jul-2012 11:55:35 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+2-jul-2012 11:55:35 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Mon Jul 02 11:55:35 CEST 2012]; root of context hierarchy
+2-jul-2012 11:55:35 org.springframework.web.context.support.AnnotationConfigWebApplicationContext loadBeanDefinitions
+INFO: Registering annotated classes: [class be.kuleuven.researchpad.config.RootConfiguration]
+2-jul-2012 11:55:35 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [springSecurity.xml]
+2-jul-2012 11:55:36 org.springframework.security.core.SpringSecurityCoreVersion <clinit>
+INFO: You are running with Spring Security Core 3.1.0.RELEASE
+2-jul-2012 11:55:36 org.springframework.security.config.SecurityNamespaceHandler <init>
+INFO: Spring Security 'config' module version is 3.1.0.RELEASE
+2-jul-2012 11:55:36 org.springframework.security.config.http.AuthenticationConfigBuilder createLoginPageFilterIfNeeded
+INFO: No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+2-jul-2012 11:55:36 org.springframework.security.config.http.HttpSecurityBeanDefinitionParser checkFilterChainOrder
+INFO: Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1000, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1200, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+2-jul-2012 11:55:37 org.springframework.core.io.support.PropertiesLoaderSupport loadProperties
+INFO: Loading properties file from class path resource [researchpad.properties]
+2-jul-2012 11:55:37 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker postProcessAfterInitialization
+INFO: Bean 'persistenceJPAConfig' of type [class be.kuleuven.researchpad.config.root.PersistenceJPAConfig$$EnhancerByCGLIB$$9e1a4894] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2-jul-2012 11:55:37 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker postProcessAfterInitialization
+INFO: Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2-jul-2012 11:55:37 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean createNativeEntityManagerFactory
+INFO: Building JPA container EntityManagerFactory for persistence unit 'default'
+2-jul-2012 11:55:37 org.hibernate.annotations.common.Version <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2-jul-2012 11:55:37 org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.0.1.Final}
+2-jul-2012 11:55:37 org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+2-jul-2012 11:55:37 org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+2-jul-2012 11:55:37 org.hibernate.ejb.Ejb3Configuration configure
+INFO: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2-jul-2012 11:55:37 org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator instantiateExplicitConnectionProvider
+INFO: HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2-jul-2012 11:55:50 org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2-jul-2012 11:55:50 org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2-jul-2012 11:55:50 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+2-jul-2012 11:55:51 org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+2-jul-2012 11:55:51 org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+2-jul-2012 11:55:51 org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+2-jul-2012 11:55:54 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.author
+2-jul-2012 11:55:54 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [id, first_name, university, email, address, department, last_name]
+2-jul-2012 11:55:54 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+2-jul-2012 11:55:54 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.author_document
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [document_id, author_id]
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [author_document_ibfk_1, author_document_ibfk_2]
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [fkaaa6d4f662a8748, fkaaa6d4f5d0f08e8]
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.document
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [content, id, complete, name, publication_year, type, doi, introduction, url]
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.person
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [id, first_name, email, last_name, password]
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+2-jul-2012 11:55:55 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+2-jul-2012 11:55:56 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.person_document
+2-jul-2012 11:55:56 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [person_document_id, recent_date, person_id, document_id, import_date, rating, notes]
+2-jul-2012 11:55:56 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [fkd71f56c593885498, fkd71f56c5234e6f58]
+2-jul-2012 11:55:56 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [fkd71f56c593885498, fkd71f56c5234e6f58, primary]
+2-jul-2012 11:55:56 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.rating_item
+2-jul-2012 11:55:56 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [content, id, pd_id]
+2-jul-2012 11:55:56 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [fk1825fc756c141bd4]
+2-jul-2012 11:55:56 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary, fk1825fc756c141bd4]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.reference
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [id, rank, page, document_id, name, reference_id, type, full_reference]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [fkc8db3f4be7271328, fkc8db3f4b234e6f58]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [fkc8db3f4be7271328, primary, fkc8db3f4b234e6f58]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+2-jul-2012 11:55:57 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean createNativeEntityManagerFactory
+INFO: Building JPA container EntityManagerFactory for persistence unit 'default'
+2-jul-2012 11:55:57 org.hibernate.ejb.Ejb3Configuration configure
+INFO: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2-jul-2012 11:55:57 org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator instantiateExplicitConnectionProvider
+INFO: HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2-jul-2012 11:55:57 org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2-jul-2012 11:55:57 org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2-jul-2012 11:55:57 org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.author
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [id, first_name, university, email, address, department, last_name]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.author_document
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [document_id, author_id]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [author_document_ibfk_1, author_document_ibfk_2]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [fkaaa6d4f662a8748, fkaaa6d4f5d0f08e8]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.document
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [content, id, complete, name, publication_year, type, doi, introduction, url]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.person
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [id, first_name, email, last_name, password]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.person_document
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [person_document_id, recent_date, person_id, document_id, import_date, rating, notes]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [fkd71f56c593885498, fkd71f56c5234e6f58]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [fkd71f56c593885498, fkd71f56c5234e6f58, primary]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.rating_item
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [content, id, pd_id]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [fk1825fc756c141bd4]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary, fk1825fc756c141bd4]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: researchpad.reference
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [id, rank, page, document_id, name, reference_id, type, full_reference]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [fkc8db3f4be7271328, fkc8db3f4b234e6f58]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [fkc8db3f4be7271328, primary, fkc8db3f4b234e6f58]
+2-jul-2012 11:55:57 org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+2-jul-2012 11:55:57 org.hibernate.ejb.internal.EntityManagerFactoryRegistry addEntityManagerFactory
+WARN: HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2-jul-2012 11:55:57 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker postProcessAfterInitialization
+INFO: Bean 'entityManager' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2-jul-2012 11:55:57 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@376c72cc: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,rootConfiguration,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0,persistenceJPAConfig,securityConfig,webConfig,authorServiceImpl,documentServiceImpl,parsingServiceImpl,personServiceImpl,searchServiceImpl,userDetailsServiceImpl,authorDaoImpl,documentDaoImpl,personDaoImpl,personDocumentDaoImpl,ratingItemDaoImpl,authorController,documentController,libraryController,rootController,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,entityManager,dataSource,transactionManager,exceptionTranslation,org.springframework.security.filterChains,org.springframework.security.filterChainProxy,org.springframework.security.web.DefaultSecurityFilterChain#0,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.userDetailsServiceFactory,org.springframework.security.web.DefaultSecurityFilterChain#1,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration#0,requestMappingHandlerMapping,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,internalResourceViewResolver,properties]; root of factory hierarchy
+2-jul-2012 11:55:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/resources/**'], []
+2-jul-2012 11:55:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@76a5994, org.springframework.security.web.authentication.logout.LogoutFilter@571f0759, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@361b90be, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4bbbc5b2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14b04ff6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4351aa16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2675ace1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77a8fb80, org.springframework.security.web.session.SessionManagementFilter@7717cddf, org.springframework.security.web.access.ExceptionTranslationFilter@3bcd288e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a21a14e]
+2-jul-2012 11:55:58 org.springframework.security.config.http.DefaultFilterChainValidator checkLoginPageIsntProtected
+INFO: Checking whether login URL '/spring_security_login' is accessible with your configuration
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/author/{authorId}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.AuthorController.author(int)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/{documentId}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.DocumentController.document(int)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/link],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void be.kuleuven.researchpad.controller.DocumentController.link(java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/postnotes],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String be.kuleuven.researchpad.controller.DocumentController.notes(java.lang.String,java.lang.Integer)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/view/{documentId}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.DocumentController.viewdocument(int)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/addrating],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String be.kuleuven.researchpad.controller.DocumentController.addrating(java.lang.Integer,java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/removerating],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void be.kuleuven.researchpad.controller.DocumentController.removerating(java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/submitrating],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String be.kuleuven.researchpad.controller.DocumentController.submitrating(java.lang.Integer,java.lang.Integer)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/saveratingitem],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String be.kuleuven.researchpad.controller.DocumentController.saveratingitem(java.lang.Integer,java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/document/doi/{doi1}/{doi2}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.DocumentController.retrievedoi(java.lang.String,java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/library/search],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.LibraryController.search(java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/library/all],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.LibraryController.all()
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/library/year/{year}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.LibraryController.year(java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/library/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.LibraryController.home()
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/library/author/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.LibraryController.author(java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/library/recent],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.LibraryController.recent()
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/library/search],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.LibraryController.search2(java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/library/gettype],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String be.kuleuven.researchpad.controller.LibraryController.gettype(java.lang.String)
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView be.kuleuven.researchpad.controller.RootController.index()
+2-jul-2012 11:55:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2-jul-2012 11:56:01 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 26126 ms
+2-jul-2012 11:56:01 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'appServlet'
+2-jul-2012 11:56:01 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'appServlet': initialization started
+2-jul-2012 11:56:01 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2bf8d0a4: startup date [Mon Jul 02 11:56:01 CEST 2012]; parent: Root WebApplicationContext
+2-jul-2012 11:56:01 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@645d9aa2: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@376c72cc
+2-jul-2012 11:56:01 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'appServlet': initialization completed in 8 ms
+2-jul-2012 11:56:01 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+2-jul-2012 11:56:01 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+2-jul-2012 11:56:01 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 41310 ms

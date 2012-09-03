@@ -1,0 +1,33 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+	
+	<http pattern="/resources/**" security="none"/>
+	
+	<http auto-config='true' authentication-manager-ref="authenticationManager">
+		<intercept-url pattern="/index" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/register" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/documents" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<!--  <intercept-url pattern="/**" access="ROLE_USER" />-->
+		<intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<!--  form -->
+		<form-login default-target-url='/home' always-use-default-target='true' />
+	</http>
+	
+	 
+	<authentication-manager alias="authenticationManager">
+	    <authentication-provider user-service-ref="userDetailsServiceImpl">
+	    	<password-encoder hash="sha"/>
+	    </authentication-provider>
+		<!--  <authentication-provider>
+			<user-service id="userDetailsService">
+				<user name="jimi" password="jimispassword" authorities="ROLE_USER, ROLE_ADMIN" />
+				<user name="bob" password="bobspassword" authorities="ROLE_USER" />
+			</user-service>
+		</authentication-provider>-->
+	</authentication-manager>
+
+</beans:beans>
